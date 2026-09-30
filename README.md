@@ -3,27 +3,3 @@
 视频摘要（Video Summarization）相关 benchmark 的文献调研与研究笔记。
 
 ## 调研报告
-
-**[阅读：2021–2026 Video Summarization 相关 Benchmark 调研](docs/benchmark-survey-2021-2026.zh-CN.md)**
-
-检索截止日期：**2026-09-11**。范围为 **ICLR、NeurIPS、ICCV、ECCV、CVPR、ICML、AAAI、IEEE TMM**。
-
-本轮整理 21 项已接收工作：
-
-| 类别 | 数量 | 覆盖内容 |
-|---|---:|---|
-| 直接摘要数据集与摘要评测子任务 | 12 | WikiHow Summaries、BLiSS、VideoXum、Mr. HiSum、LfVS-P/T、MMSum、PlotSnap、Instruct-V2Xum、Shot2Story、MLVU–VS、MoSu、MedVidBench–VS |
-| 摘要邻近任务 | 8 | QVHighlights、MovieLights、TGT 电影—预告片数据、DocumentaryNet、Repurpose-10K、VideoAds–Visual Summary、CineBench、HourVideo–Summarization |
-| 有限评测语料 | 1 | TMM 的 M-D 电影—纪录片语料 |
-
-每项包含输入、输出、接收时间、标注方式与内容、视频长度、帧率，以及原始论文或官方资源链接。报告另列 LVSum 等接收状态待核实的候选，以及年份或 venue 不符合范围的工作。
-
-## 阅读说明
-
-- 原视频长度、切分后的输入长度和输出摘要长度分别记录。
-- 原始视频 FPS、模型采样率、固定帧数与标注时间粒度分别记录。
-- 人工摘要、模型合成后审核、自动匹配和观看行为代理标签分别说明。
-- `NR` 表示在已核查资料中未找到明确报告，不用经验值补填。
-- 会议届次、接收通知日期、出版日期和预印本上传日期分别处理。
-
-本仓库保存调研文档与公开来源链接；实际实验前仍需核对目标数据集的发布版本、划分和评价代码。
