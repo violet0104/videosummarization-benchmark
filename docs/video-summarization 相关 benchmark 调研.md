@@ -33,7 +33,7 @@ ffprobe -v error -select_streams v:0 -show_entries stream=avg_frame_rate -of def
 
 **接收时间：**ECCV 2022
 
-![image-20260917101524642](C:\Users\31708\AppData\Roaming\Typora\typora-user-images\image-20260917101524642.png)
+![image-20260917101524642](./assets/image-20260917101524642.png)
 
 **数据集内容：**
 
@@ -71,7 +71,7 @@ ffprobe -v error -select_streams v:0 -show_entries stream=avg_frame_rate -of def
 
 **接收时间：** CVPR 2023
 
-![image-20260917102013129](C:\Users\31708\AppData\Roaming\Typora\typora-user-images\image-20260917102013129.png)
+![image-20260917102013129](./assets/image-20260917102013129.png)
 
 **数据集内容：** 
 
@@ -111,7 +111,7 @@ ffprobe -v error -select_streams v:0 -show_entries stream=avg_frame_rate -of def
 
 接收时间：NeurIPS 2023
 
-![image-20260917102142097](C:\Users\31708\AppData\Roaming\Typora\typora-user-images\image-20260917102142097.png)
+![image-20260917102142097](./assets/image-20260917102142097.png)
 
 数据集内容：
 
@@ -145,7 +145,7 @@ gt_summary
 
 gtscore
 
-![image-20260916000206757](C:\Users\31708\AppData\Roaming\Typora\typora-user-images\image-20260916000206757.png)
+![image-20260916000206757](./assets/image-20260916000206757.png)
 
 ---
 
@@ -159,7 +159,7 @@ gtscore
 
 接收时间：**IEEE TMM，2023-11-12 接收；发表于 2024 年第 26 卷**。
 
-![image-20260917102529897](C:\Users\31708\AppData\Roaming\Typora\typora-user-images\image-20260917102529897.png)
+![image-20260917102529897](./assets/image-20260917102529897.png)
 
 数据集内容：
 
@@ -301,7 +301,7 @@ gtscore
 
 接收时间：**ACL 2025 主会长文**
 
-![image-20260917110316920](C:\Users\31708\AppData\Roaming\Typora\typora-user-images\image-20260917110316920.png)
+![image-20260917110316920](./assets/image-20260917110316920.png)
 
 数据集内容：
 
@@ -342,7 +342,7 @@ hugging face 申请访问未通过
 
 代码：[V2Xum-LLM](https://github.com/hanghuacs/V2Xum-LLM)
 
-![image-20260917110338900](C:\Users\31708\AppData\Roaming\Typora\typora-user-images\image-20260917110338900.png)
+![image-20260917110338900](./assets/image-20260917110338900.png)
 
 接收时间：AAAI 2025。
 
@@ -445,7 +445,7 @@ Please generate BOTH video and text summarization for this video."
 
 代码：[MLVU](https://github.com/JUNJIE99/MLVU)
 
-![image-20260917110436840](C:\Users\31708\AppData\Roaming\Typora\typora-user-images\image-20260917110436840.png)
+![image-20260917110436840](./assets/image-20260917110436840.png)
 
 接收时间：CVPR 2025。
 
@@ -493,7 +493,7 @@ Please generate BOTH video and text summarization for this video."
 
 代码：[SD-VSum](https://github.com/IDT-ITI/SD-VSum)
 
-![image-20260917110541815](C:\Users\31708\AppData\Roaming\Typora\typora-user-images\image-20260917110541815.png)
+![image-20260917110541815](./assets/image-20260917110541815.png)
 
 接收时间：**ACM Multimedia 2025**。两套数据来自同一篇论文；SD-VSum 是方法名。
 
@@ -502,7 +502,7 @@ Please generate BOTH video and text summarization for this video."
 - **S-VideoXum：** 从原 VideoXum 中仍可获取的视频构建，包含 **11,908 条视频**。每条保留 **10 份人工视觉摘要参考**，并为每份参考生成一个对应的自然语言 script，共 **119,080 组视频—参考视觉摘要（人工选取的摘要帧/片段）—script 配对**；
 - **S-NewsVSum：** 包含 **45 条新闻播报视频**，每条配套 **1 份专业编辑制作的视觉摘要**及人工撰写的 script。原始视频和 script 原文属于媒体公司的专有素材，公开发布的是预提取特征、参考选择标签与划分文件。
 
-![image-20260916162936568](C:\Users\31708\AppData\Roaming\Typora\typora-user-images\image-20260916162936568.png)
+![image-20260916162936568](./assets/image-20260916162936568.png)
 
 **输入：**
 
@@ -531,7 +531,7 @@ S-VideoXum：
 
 Text Annotations：Dense Captions + Scripts
 
-![image-20260916161900619](C:\Users\31708\AppData\Roaming\Typora\typora-user-images\image-20260916161900619.png)
+![image-20260916161900619](./assets/image-20260916161900619.png)
 
 
 
@@ -547,7 +547,7 @@ Text Annotations：Dense Captions + Scripts
 
 接收时间：**尚未核实正式接收**。arXiv 首版为 **2025-10-07**，v2 修订于 **2026-05-07**；截至本次核实，论文页和仓库仍标为 **under review**。
 
-![image-20260917111626683](C:\Users\31708\AppData\Roaming\Typora\typora-user-images\image-20260917111626683.png)
+![image-20260917111626683](./assets/image-20260917111626683.png)
 
 **数据集内容：**
 
@@ -590,13 +590,13 @@ SD-MVSum 是方法名称，配套发布 **SM-VideoXum** 和 **SM-MrHiSum** 两�
 
 **SM-MrHiSum**
 
-![image-20260915233144876](C:\Users\31708\AppData\Roaming\Typora\typora-user-images\image-20260915233144876.png)
+![image-20260915233144876](./assets/image-20260915233144876.png)
 
 **SM-VideoXum**
 
-![image-20260915233228834](C:\Users\31708\AppData\Roaming\Typora\typora-user-images\image-20260915233228834.png)
+![image-20260915233228834](./assets/image-20260915233228834.png)
 
-![image-20260915233249723](C:\Users\31708\AppData\Roaming\Typora\typora-user-images\image-20260915233249723.png)
+![image-20260915233249723](./assets/image-20260915233249723.png)
 
 ---
 
@@ -610,7 +610,7 @@ SD-MVSum 是方法名称，配套发布 **SM-VideoXum** 和 **SM-MrHiSum** 两�
 
 接收时间：[ICLR 2026](https://iclr.cc/virtual/2026/poster/10006671)。
 
-![image-20260917111652047](C:\Users\31708\AppData\Roaming\Typora\typora-user-images\image-20260917111652047.png)
+![image-20260917111652047](./assets/image-20260917111652047.png)
 
 数据集内容：
 
@@ -637,11 +637,11 @@ SD-MVSum 是方法名称，配套发布 **SM-VideoXum** 和 **SM-MrHiSum** 两�
 - 长度：**120–501 秒，平均 272.25 秒（约 4.54 分钟）**
 - 帧率：未报告。视觉抽帧为 **1 FPS**。
 
-![image-20260917112120132](C:\Users\31708\AppData\Roaming\Typora\typora-user-images\image-20260917112120132.png)
+![image-20260917112120132](./assets/image-20260917112120132.png)
 
-![image-20260917112228850](C:\Users\31708\AppData\Roaming\Typora\typora-user-images\image-20260917112228850.png)
+![image-20260917112228850](./assets/image-20260917112228850.png)
 
-![image-20260917112526048](C:\Users\31708\AppData\Roaming\Typora\typora-user-images\image-20260917112526048.png)
+![image-20260917112526048](./assets/image-20260917112526048.png)
 
 ---
 
@@ -655,7 +655,7 @@ SD-MVSum 是方法名称，配套发布 **SM-VideoXum** 和 **SM-MrHiSum** 两�
 
 接收时间：**2026 年预印本，尚未核实正式会议／期刊接收**。arXiv 首版 **2026-04-11**，所核对修订版为 **2026-07-17**。
 
-![image-20260917112548043](C:\Users\31708\AppData\Roaming\Typora\typora-user-images\image-20260917112548043.png)
+![image-20260917112548043](./assets/image-20260917112548043.png)
 
 数据集内容：
 

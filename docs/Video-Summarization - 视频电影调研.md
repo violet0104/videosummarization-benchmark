@@ -5,7 +5,7 @@
 - 电影解说视频
 - 时长 3~10 分钟，大部分在 5 分钟以内
 
-![image-20260923103429178](C:\Users\31708\AppData\Roaming\Typora\typora-user-images\image-20260923103429178.png)
+![Movies in Minutes](./assets/Movies%20in%20Minutes.png)
 
 > 英文单词数：607 words
 >
@@ -20,9 +20,9 @@
 - 包含多个 seasons + 转写
 - 一季大约 3~6 分钟
 
-![image-20260922165703991](C:\Users\31708\AppData\Roaming\Typora\typora-user-images\image-20260922165703991.png)
+![Man of Recaps-1](./assets/Man%20of%20Recaps-1.png)
 
-![image-20260922165838345](C:\Users\31708\AppData\Roaming\Typora\typora-user-images\image-20260922165838345.png)
+![Man of Recaps-2](./assets/Man%20of%20Recaps-2.png)
 
 > 一季英文单词数：约 848 words
 >

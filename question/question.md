@@ -2,7 +2,7 @@
 
 #### 1. kts代码分割出来的片段有2000多个，但是官方给出的只有71个
 
-![image-20260907103706025](C:\Users\31708\AppData\Roaming\Typora\typora-user-images\image-20260907103706025.png)
+![kts_result](./assets/kts_result.png)
 
 
 
@@ -25,7 +25,7 @@
 >
 > 不足：不是对每帧生成 caption，而是当当前帧的特征和历史特征存在显著差异时，才输出当前帧的 caption 作为一个片段的 caption？？
 
-![image-20260923112244058](C:\Users\31708\AppData\Roaming\Typora\typora-user-images\image-20260923112244058.png)
+![framework-v1.0](./assets/framework-v1.0.png)
 
 
 
@@ -40,10 +40,10 @@
 >
 > ChatGPT 生成
 
-![framework](C:\Users\31708\Desktop\framework.png)
+![framework-v1.1](./assets/framework-v1.1.png)
 
 
 
 > streamo 生成 caption
 
-![image-20260923170656313](C:\Users\31708\AppData\Roaming\Typora\typora-user-images\image-20260923170656313.png)
+![Streamo](./assets/Streamo.png)

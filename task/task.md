@@ -38,7 +38,7 @@
 
 - streamo 论文（流式视频） [Streaming Video Instruction Tuning](https://openaccess.thecvf.com/content/CVPR2026/papers/Xia_Streaming_Video_Instruction_Tuning_CVPR_2026_paper.pdf)
 
-![image-20260924150222216](C:\Users\31708\AppData\Roaming\Typora\typora-user-images\image-20260924150222216.png)
+![Streamo](./assets/Streamo.png)
 
 streamo 方法
 
@@ -79,8 +79,6 @@ streamo 方法
         1. 历史中已经出现且没有发生变化的信息；
         2. 同一动作或状态的持续；
         3. 仅仅因为当前画面仍能看到某个物体而重复描述它。
-
-
 
 ------
 
