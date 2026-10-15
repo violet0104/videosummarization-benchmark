@@ -35,8 +35,9 @@
     - [Movies in Minutes](https://www.youtube.com/@MoviesinMinutes)
 
     - [Man of Recaps](https://www.youtube.com/@ManofRecaps)
+- Streamo（流式视频）
+    -  [Streaming Video Instruction Tuning](https://jiaerxia.github.io/Streamo/)
 
-- streamo 论文（流式视频） [Streaming Video Instruction Tuning](https://openaccess.thecvf.com/content/CVPR2026/papers/Xia_Streaming_Video_Instruction_Tuning_CVPR_2026_paper.pdf)
 
 ![Streamo](./assets/Streamo.png)
 
@@ -105,7 +106,7 @@ streamo 方法
 
 我们要做的 benchmark 有什么 contribution：
 
-- 视觉、文本摘要：片段时间戳 + 片段描述
+- 视觉、文本摘要：片段时间戳 + 片段描述（已经有了）
 
 - 完整视频的连贯文本摘要（人工 / LLM 撰写，不是拼接；能够知道人物身份，而不是全用代词指代）
 
