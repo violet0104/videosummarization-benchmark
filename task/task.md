@@ -93,6 +93,61 @@ streamo 方法
 
 **Notes**
 
+参考数据集：[MovieRecapsQA](https://sshaar.github.io/MovieRecapsQA/)
+
+用于我们的任务：
+
+facts.json
+
+```json
+  {
+    "fact_id": 12581,
+    "video_id": "0sYXzirol6A",
+    "segment_id": 0,
+    "fact": "The speaker will explain a drama thriller film today."
+  }
+```
+
+segments.json
+
+```json
+  {
+    "video_id": "0sYXzirol6A",
+    "segment_id": 0,
+    "movie_start_time": 1317.191,
+    "movie_end_time": 1609.858,
+    "recap_start_time": 0.033,
+    "recap_end_time": 7.374,
+    "fact_ids": [
+      12581,
+      12582
+    ]
+  }
+```
+
+recaps.json
+
+```json
+  {
+    "video_id": "0sYXzirol6A",
+    "movie_name": "silence_of_the_lambs",
+    "subtitle_url": "http://www.opensubtitles.org/download/sub/3578020",
+    "imdb_url": "http://www.imdb.com/title/tt0102926/"
+  }
+```
+
+summary.json
+
+```
+
+```
+
+问题：存在 start > end 
+
+
+
+
+
 定义问题：我们要做的是什么？
 
 - input：长视频/电影（1-2h）+ 字幕
@@ -130,6 +185,7 @@ streamo 方法
 - 面向长视频摘要任务较少
 - 视觉摘要和文本摘要没有很好的结合：有些数据集同时提供视觉和文本摘要，但两者是分别标注的，没有明确说明文本摘要中的内容对应原视频中的哪些画面。因此比较难研究画面和文字是否一致
 - 没有完整视频对应的连贯文本摘要（比如：只是将事件描述简单的拼接）
+- 电影等叙事视频的文本摘要缺少角色姓名等实体信息，模型难以建立 "他 / 她" 与具体人物之间的指代关联，人物识别能力受限
 
 
 
@@ -228,3 +284,52 @@ streamo 方法
     - 文本摘要：每个选中的片段配一句简短的 description
     - 不足：
       - 文本是片段级 description，不是连贯的叙事摘要
+
+
+
+---
+
+### 10 月
+
+---
+
+#### 10.16
+
+**Todo**
+
+- 找 10 个视频（包括原始电影视频、YouTube 解说视频 + 文本 summary）
+- 用 AURA 跑上述视频，生成 caption，对比结果（包括选出的帧 + 总的 text summary）
+- 搭建初步 pipeline
+- [AURA: Always-On Understanding and Real-Time Assistance via Video Streams](https://arxiv.org/abs/2604.04184)
+- [MovieRecapsQA: A Multimodal Open-Ended Video Question-Answering Benchmark](https://arxiv.org/abs/2601.02536)
+
+
+
+**Notes**
+
+在 MovieRecapsQA 基础上建立用于视频摘要的 benchmark
+
+
+
+我们的 benchmark 有什么 contribution：
+
+1. 数据集上：
+
+   - 长视频摘要（电影等 1-2h 视频）
+   - 视频 + 文本摘要对齐
+   - 具有连续故事性摘要（完整视频对应的文本摘要 + 理解人物关系 + 理解叙事）
+
+2. 问题定义上：
+
+   - 对问题重新定义：从流式角度看视频摘要任务。从数据集，到评测标准，提出全新的任务
+
+   
+
+视频摘要方法：
+
+- 使用流式处理方法（比如 AURA），在合适响应时机输出片段级的 caption，并打分
+- 同时使用 prompt 引导模型生成增量 caption，减少生成重复语义
+
+
+
+问题：生成 caption 时，如何控制 token 数接近解说视频的文本 token 数
